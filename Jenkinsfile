@@ -4,11 +4,6 @@
     STACKHAWK_API_KEY = credentials("stackhawk-api-key")
   }
   stages {
-    stage ("Checkout code") {
-      steps {
-        checkout scm
-      }
-    }
     stage("Run HawkScan Test") {
       steps {
         sh '''
