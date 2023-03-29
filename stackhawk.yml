@@ -1,0 +1,9 @@
+app:
+  applicationId: hawk.tswPehEvOk2wEj2xsEoC.uwRkWarZfNHsuAzsVz06
+  host: https://shashankmsanap.github.io/projects/
+  env: Development
+
+hawk:
+  startupTimeoutMinutes: 1
+  spider:
+    base: false
