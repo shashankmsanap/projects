@@ -6,10 +6,6 @@ pipeline {
         checkout scm
       }
     }
-    stage ("Pull HawkScan Image") {
-      steps {
-        sh 'docker pull stackhawk/hawkscan'
-      }
     }
     stage ("Run HawkScan Test") {
       environment {
