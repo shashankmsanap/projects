@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  environment {
+        STACKHAWK_API_KEY = credentials('stackhawk-api-key')
+      }
   stages {
     stage ("Checkout code") {
       steps {
@@ -13,9 +16,6 @@ pipeline {
       }
     }
     stage ("Run HawkScan Test") {
-      environment {
-        STACKHAWK_API_KEY = credentials('stackhawk-api-key')
-      }
       steps {
         sh '''
           docker run -v ${WORKSPACE}:/hawk:rw -t \
@@ -26,4 +26,4 @@ pipeline {
       }
     }
   }
-}
+ }
