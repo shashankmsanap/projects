@@ -1,6 +1,6 @@
 app:
   applicationId: ffd54ae6-5ceb-4b06-94dc-e8a4678bd75d
-  host: https://shashankmsanap.github.io/projects/
+  host: https://shashankmsanap.github.io/projects
   env: Development
 
 hawk:
