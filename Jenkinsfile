@@ -4,10 +4,6 @@
     STACKHAWK_API_KEY = credentials("stackhawk-api-key")
   }
   stages {
-    stage("Deploy site") {
-      steps {
-        sh 'cp index.json /var/www/html'
-      }
     stage ("Checkout code") {
       steps {
         checkout scm
@@ -25,4 +21,3 @@
     }
   }
 }
-  }
