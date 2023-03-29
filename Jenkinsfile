@@ -4,11 +4,6 @@
     STACKHAWK_API_KEY = credentials("stackhawk-api-key")
   }
   stages {
-    stage("Deploy site") {
-      steps {
-        sh 'cp index.html'
-      }
-    }
     stage("Run HawkScan Test") {
       steps {
         sh '''
