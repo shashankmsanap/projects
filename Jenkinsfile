@@ -6,7 +6,7 @@
   stages {
     stage("Deploy site") {
       steps {
-        sh 'cp index.html /var/www/html'
+        sh 'cp index.html'
       }
     }
     stage("Run HawkScan Test") {
