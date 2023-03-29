@@ -6,6 +6,11 @@ pipeline {
         checkout scm
       }
     }
+    stages {
+    stage("Deploy site") {
+      steps {
+        sh 'cp index.json /var/www/html'
+      }
     }
     stage ("Run HawkScan Test") {
       environment {
